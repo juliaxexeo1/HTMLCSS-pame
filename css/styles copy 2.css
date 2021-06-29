@@ -443,6 +443,24 @@ a {
 
 }
 
+
+
+
+
 #linha{
   border-bottom: 1px solid #3a3b3c
 }
+
+.seta{
+  margin-top: 250px;
+  filter: invert(70%);
+  margin-left: 10px;
+}
+
+.seta2{
+  margin-top: 315px;
+  filter: invert(70%);
+  transform: rotateY(180deg);
+  margin-right: 30px;
+}
+
