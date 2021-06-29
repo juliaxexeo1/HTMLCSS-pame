@@ -1,0 +1,448 @@
+/***************
+ *    GERAL    * 
+ ***************/
+
+/*Rem unidade de medida relativa*/
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+ 
+  font-size: 1.6rem;
+  font-family: "Segoe UI", Helvetica, Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/***************
+ *Inicio do post * 
+ ***************/
+
+.post {
+  width: 100%;
+  
+}
+
+.nomedopost {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 1.6rem 0 1.6rem;
+}
+
+/*lado esquerdo */
+.header__esquerdo {
+  flex: 1;
+}/*se tirar, fluxo consultoria não fica na mesma linha*/
+
+.nomedoautor:hover,
+.datadopost:hover {
+  text-decoration: underline;
+}/* coloca a linha em baixo do nome do autor e da data ao passar o mouse */
+
+
+
+
+.nomedoautor {
+  margin-right: 0.2rem;
+}
+
+.fotodeperfil {
+  float: left;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 0.8rem;
+  border-radius: 50%;
+ 
+}/*coloca a foto de perfil igual a do fb*/
+
+
+.autordopost {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.post__date {
+  display: block;
+  float: left;
+  font-size: 1.3rem;
+}
+
+
+
+
+/****************
+ * CONTEUDO DO POST * 
+ ****************/
+
+.parágrafo {
+  font-size: 1.5rem;
+  padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+} /*configura o posicionamento do parágrafo*/
+
+
+/***************
+ * Parte de baixo do post * 
+ ***************/
+
+
+.numcom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.5rem;
+  color:   #868888;
+} /*posiciona o lugar aonde fica o número de compartilhamentos e curtidas*/
+
+
+
+
+.num {
+  margin-left: 0.3rem;
+}
+
+.compart {
+  margin-left: 0.2rem;
+} /*posicionamento*/
+
+
+
+/* Parte do like coment etc */
+.caixadosbot {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 1.2rem;
+  border-top: 1px solid  #3a3b3c;
+  border-bottom: 1px solid  #3a3b3c ;
+} 
+
+
+
+
+/*************************atenção**************/
+
+
+
+/*comentários do post */
+.comenti {
+  padding: 0.8rem 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: right;
+  
+}
+
+/* Comments filter */
+.filtro {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  ;
+}/* posiciona o mais relevante*/
+/**atenção***/
+.filter__icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-image: url("../images/seta.svg");
+  background-size: 7.4rem 43.4rem;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  
+  
+}
+
+/* meu comentario*/
+.meucoment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.meuprofile {
+  margin-right: 1rem;
+  position: relative;
+}
+
+
+.meuprofile:hover {
+  cursor: pointer;
+}
+
+.minhafoto {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+}
+
+.barrinha {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.inpbarrinha {
+  width: 100%;
+  border: none;
+  padding: 1.2rem;
+  font-size: 1.5rem;
+  color: rgba(5, 5, 5, 0.8);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  outline: none;
+  flex: 1;
+}
+
+.balao2{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  background-color: #3a3b3c;
+  border-radius: 2rem;
+  color:whitesmoke;
+  width: 300px;
+}
+
+
+
+
+
+
+
+/*comentário dos amigos */
+.comenta1 {
+  display: flex;
+  text-align: start;
+}
+
+.imamigo{
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+
+}
+
+
+.comentamigo {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  /*background-color: teal;*/
+  
+}
+
+.balao{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  background-color: #3a3b3c;
+  border-radius: 2rem;
+
+}
+
+.nomeamigo {
+  align-self: flex-start;
+  font-size: 1.35rem;
+}/*configura como fica o nome do amigo*/
+
+.nomeamigo:hover {
+  text-decoration: underline;
+}/*o que acontece quando passa o mouse sobre o nome do amigo */
+
+.contcomentario {
+  font-size: 1.5rem;
+  font-weight: 400;
+} /*como fica o conteudo do comentario*/
+
+.comment__reactions {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: -1.5rem;
+  right: 0;
+  padding: 0.2rem 0.5rem;
+  background: var(--white);
+  ;
+  border-radius: 1rem;
+  cursor: pointer;/* acabei usando para outros simbolos tmb*/
+}
+
+.reactions__emojis {
+  width: 1.6rem;
+  height: 1.6rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+} /*acabei usando essa classe várias vezes ao longo do código, para colocar os simbolos direitos*/
+
+
+.reactions__like {
+  z-index: 2;
+}
+
+
+.reactions__count {
+  position: relative;
+  right: 0.1rem;
+  font-size: 1.32rem;
+  font-weight: 400;
+  color: var(--reactions-links);
+}
+
+
+
+.options__comment {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-position: 0 -36.8rem;
+  background-size: 7.4rem 44.6rem;
+  background-image: url("../images/icons-list-5.png");
+  filter: invert(100%)
+}
+
+
+
+/*curtir, responder e a data*/
+.comentarcoment {
+  bottom: -2rem;
+  color: gray(--reactions-links);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.curtiu,
+.respondeu{
+  font-weight: 700;
+}
+
+.curtiu:hover,
+.respondeu:hover,
+.links__data:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+.preto1 {
+  height: 100%;
+  width: 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+ /* overflow-x: hidden;*/
+  padding-top: 20px;
+}
+
+.espim{
+  margin-left: 10%;
+  padding: 0px 10px;
+  background-image: url(../images/processo_seletivo.JPG.);
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  width: 47.5%;
+  height: 100%;
+  position: fixed;
+  /*z-index: 1;*/
+  top: 0;
+  left: 0;
+  /*overflow-x: hidden;*/
+  padding-top: 20px;
+}
+
+.esqpreto{
+  margin-left: 57.2%; 
+  padding: 0px 10px;
+  background-color:black;
+  width: 12.5%;
+  height: 100%;
+  position: fixed;
+  /*z-index: 1*/;
+  top: 0;
+  left: 0;
+  /*overflow-x: hidden*/;
+  padding-top: 20px;
+}
+.cinza{
+ margin-left: 70%; 
+  padding: 0px 10px;
+  background-color:#242526;
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  /*z-index: 1*/;
+  top: 0;
+  left: 0;
+  right: 0;
+  /*overflow-x: hidden*/;
+  padding-top: 20px;
+  display: flex;
+ flex-direction:column;
+}
+
+.barracima {
+  width: 100%;
+  background-color:none;
+  overflow: auto;
+  top: 0;
+  margin-top: -20px;
+  margin-left: 10px;
+}
+.barracima2 {
+  width: 100%;
+  background-color:none;
+  overflow: auto;
+  top: 0;
+  margin-top: -20px;
+  margin-left: 150px;
+}
+
+.barracima a {
+  float: left;
+  width: 30px;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+  
+}
+
+.barracima a:hover {
+  background-color: #555;
+}
+
+.bolinha{
+  width: 4rem;
+  height: 4rem;
+  margin-right: 0.8rem;
+  border-radius: 50%;
+  background-color: #3a3b3c;
+
+}
+
+#linha{
+  border-bottom: 1px solid #3a3b3c
+}
