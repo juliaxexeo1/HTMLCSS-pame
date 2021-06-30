@@ -464,3 +464,24 @@ a {
   margin-right: 30px;
 }
 
+.fb{
+  width: 36.6667px; 
+  margin-top: -20px; 
+  height: 57px;
+}
+
+.etiqueta{
+  width: 25px; height: 25px;
+}
+
+.stdup{
+  width: 25px; height: 25px;
+}
+.lupa2{
+  width: 28px; 
+  height: 28px;
+  opacity: 0.5;
+}
+
+.lupa1{ width: 28px; 
+  height: 28px;}
